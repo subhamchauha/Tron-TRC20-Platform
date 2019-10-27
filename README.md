@@ -1,4 +1,4 @@
-# CodeXpert Tron (TRX) TRC20 Platform
+# Tron (TRX) TRC20 Platform
 
 ------------------------
 
