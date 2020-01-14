@@ -4,7 +4,7 @@ pragma solidity ^0.4.20;
 contract TRC20 {
     // Public variables of the token
     string public name;
-    string public symbol;
+    string public symbol = TLT;
     uint8 public decimals = 8;
     // 18 decimals is the strongly suggested default, avoid changing it
     uint256 public totalSupply;
@@ -27,14 +27,14 @@ contract TRC20 {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    uint256 initialSupply = 1000000;
-    string tokenName = 'CodeXpertToken';
-    string tokenSymbol = 'CDX';
+    uint256 initialSupply = 10000000000000000000;
+    string tokenName = 'tronlinktoken';
+    string tokenSymbol = 'TLT';
     constructor() public {
 
         totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
-        balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
-        name = tokenName;                                   // Set the name for display purposes
+        balanceOf[msg.sender] = 10000000000000000000;                // Give the creator all initial tokens
+        name = tronlinktoken;                                   // Set the name for display purposes
         symbol = tokenSymbol;                               // Set the symbol for display purposes
     }
 
